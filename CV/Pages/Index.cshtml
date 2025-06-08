@@ -1,10 +1,67 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Inicio";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<section class="cv-section text-center py-5 bg-light">
+    <div class="container">
+        <img src="~/images/Luis_CV.JPG" alt="Foto de Luis" class="rounded-circle shadow mb-4" style="width:150px; height:150px; object-fit:cover;">
+        <h1 class="display-4 mb-3 fw-bold">¡Hola! Soy Luis</h1>
+        <h2 class="h4 text-primary mb-3">Desarrollador web en .NET</h2>
+        <p class="lead mb-4">
+            Bienvenido/a a mi portfolio profesional. Aquí podrás conocer mi trayectoria, experiencia y proyectos.
+        </p>
+        <div class="d-flex justify-content-center gap-3 mb-4">
+            <a class="btn btn-primary btn-lg" asp-page="/SobreMi"><i class="fas fa-user me-2"></i>Sobre mí</a>
+            <a class="btn btn-outline-secondary btn-lg" asp-page="/Proyectos"><i class="fas fa-code me-2"></i>Proyectos</a>
+            <a class="btn btn-success btn-lg" asp-page="/Contacto"><i class="fas fa-envelope me-2"></i>Contacto</a>
+        </div>
+        <div class="mt-4">
+            <a href="https://linkedin.com/in/luisgga" target="_blank" class="text-decoration-none me-3">
+                <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+            <a href="https://github.com/luis5500" target="_blank" class="text-decoration-none me-3">
+                <i class="fab fa-github fa-2x"></i>
+            </a>
+            <a href="mailto:luisgarciagascon@gmail.com" class="text-decoration-none">
+                <i class="fas fa-envelope fa-2x"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="cv-section py-5">
+    <div class="container">
+        <h2 class="mb-4 text-center fw-bold">¿Por qué elegirme?</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <i class="fas fa-lightbulb fa-2x text-primary mb-3"></i>
+                        <h5 class="card-title">Creatividad</h5>
+                        <p class="card-text">Aporto ideas innovadoras y soluciones originales a cada proyecto en el que participo.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <i class="fas fa-users fa-2x text-primary mb-3"></i>
+                        <h5 class="card-title">Trabajo en equipo</h5>
+                        <p class="card-text">Experiencia colaborando en equipos multidisciplinares, logrando objetivos comunes.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <i class="fas fa-chart-line fa-2x text-primary mb-3"></i>
+                        <h5 class="card-title">Resultados</h5>
+                        <p class="card-text">Compromiso con la excelencia y la entrega de resultados medibles y de calidad.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
