@@ -1,22 +1,26 @@
-html {
-  font-size: 14px;
-}
-
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
-html {
-  position: relative;
-  min-height: 100%;
-}
-
+/* Personalización del CV */
 body {
-  margin-bottom: 60px;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
 }
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+.social-links a {
+    transition: color 0.3s ease;
+}
+
+    .social-links a:hover {
+        color: #0d6efd !important;
+    }
+
+/* Secciones del CV */
+.cv-section {
+    padding: 4rem 0;
+}
+
+    .cv-section:nth-child(even) {
+        background-color: #f8f9fa;
+    }

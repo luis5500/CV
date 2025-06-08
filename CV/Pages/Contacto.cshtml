@@ -1,0 +1,30 @@
+﻿@page
+@model ContactoModel
+@{
+    ViewData["Title"] = "Contacto";
+}
+
+<section class="cv-section">
+    <div class="container">
+        <h1 class="display-4 mb-4">Contacto</h1>
+        <form method="post">
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" name="Nombre" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Correo electrónico</label>
+                <input type="email" class="form-control" id="email" name="Email" required>
+            </div>
+            <div class="mb-3">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="mensaje" name="Mensaje" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+        @if (ViewData["MensajeEnviado"] != null)
+        {
+            <div class="alert alert-success mt-3">@ViewData["MensajeEnviado"]</div>
+        }
+    </div>
+</section>
